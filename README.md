@@ -15,7 +15,7 @@ El material usado es:
 
 ## Esquema de proyecto
 
-
+![Esquema de proyecto](http://www.bgait.com/img/desarrollo/esquemaproyecto.png)
 ## Código aportado
 
 El código aportado es una aplicación Universal Windows Platform en Background. El funcionamiento se divide en dos partes. 
