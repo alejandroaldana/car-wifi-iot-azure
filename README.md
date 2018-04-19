@@ -34,7 +34,10 @@ AzureIoTHub.SendDeviceToCloudMessageAsync(...);
 ```
 ## Conexión a Azure
 ![Conexión a Azure](https://docs.microsoft.com/en-us/azure/iot-hub/media/iot-hub-get-started-e2e-diagram/4.png).
-Si se desea conectar con **AzureIoTHub**, aquí os dejo [un tutorial de Microsoft para realizar esta acción](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-csharp-csharp-getstarted).
+Si se desea conectar con **AzureIoTHub**, aquí os dejo [un tutorial de Microsoft para realizar esta acción](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-csharp-csharp-getstarted). Una vez tengamos nuestro Hub montado y en funcionamiento necesitaremos agregar la cadena de conexión en el archivo AzureIoTHub.cs:
+```
+const string deviceConnectionString = "{insert your connection string here}";
+```
 En este proyecto se realiza una conexión con Azure IoT Hub para transmitir la telemetría del robot en tiempo real a través de **Azure Stream Analytics**. Stream Analytics lo envía a Power BI donde podremos analizar la información y obtener informes personalizados en un cuadro de mando.  
 ![Cuadro de mando](http://www.bgait.com/img/desarrollo/cuadrodemandocoche.png)
 
